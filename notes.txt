@@ -1,0 +1,19 @@
+steps in data preparation
+a. load the data
+b. inspect the data
+c. clean the data
+d. explore the data
+e. transform the data
+f. store the data
+
+
+types of data types in our insurance csv file
+age         float64
+sex          object
+bmi         float64
+children    float64
+smoker       object
+region       object
+charges     float64
+
+Index: RangeIndex(start=0, stop=1338, step=1)
