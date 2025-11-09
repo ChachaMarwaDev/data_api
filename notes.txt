@@ -17,3 +17,26 @@ region       object
 charges     float64
 
 Index: RangeIndex(start=0, stop=1338, step=1)
+
+Cleaned version data types
+ #   Column    Non-Null Count  Dtype
+---  ------    --------------  -----
+ 0   age       1338 non-null   int64
+ 1   sex       1338 non-null   object
+ 2   bmi       1338 non-null   float64
+ 3   children  1338 non-null   int64
+ 4   smoker    1338 non-null   object
+ 5   region    1338 non-null   object
+ 6   charges   1338 non-null   float64
+
+The correlation between categorical data [sex, smoker, region]
+
+smoker   no  yes
+sex
+female  547  115
+male    517  159
+
+region  northeast  northwest  southeast  southwest
+smoker
+no            257        267        273        267
+yes            67         58         91         58

@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Loading the csv file 
-path = Path(r"csv_files\insurance.csv")
+path = Path(r"csv_processed_files\insurance_procesessed.csv")
 df = pd.read_csv(path)
 
 
