@@ -11,29 +11,25 @@ import seaborn as sns
 #     main()
 
 # Data loading
-# path = Path(r"csv_raw_files\insurance.csv")
-# df = pd.read_csv(path)
-# # making a temporary copy of the file
-# df_copy = df.copy()
-
-
-path = Path(r"csv_processed_files\insurance_procesessed.csv")
+path = Path(r"csv_raw_files\insurance.csv")
 df = pd.read_csv(path)
+# making a temporary copy of the file
+df_copy = df.copy()
 
-print(df['age'].corr(df['bmi']))
-# print(pd.crosstab(df['smoker'], df['sex']))
 
+# path = Path(r"csv_processed_files\insurance_procesessed.csv")
+# df = pd.read_csv(path)
+# df_copy = df
 
 #Data inspection
 
-#shows column names in dataframe
+# shows column names in dataframe
 # print(df.columns) # these are columns:['age', 'sex', 'bmi', 'children', 'smoker', 'region', 'charges']
 
 # checking the data types 
 # print(df_copy.dtypes)
 # gives a statistical summary of numerical columns
 # print(df_copy.info()) 
-
 # see statistical summary
 # print(df_copy.describe())
 
@@ -47,25 +43,24 @@ print(df['age'].corr(df['bmi']))
 # print(df_copy.nunique()) # age:47, sex:2, bmi:548, children:6, smoker:2, region:4, charges:1337
 
 # Filling data
-# df_copy.fillna(df_copy['age'].median(), inplace=True)
-# df_copy.fillna(df_copy['bmi'].median(), inplace=True)
-# df_copy.fillna(df_copy['children'].median(), inplace=True)
+df_copy.fillna(df_copy['age'].median(), inplace=True)
+df_copy.fillna(df_copy['bmi'].median(), inplace=True)
+df_copy.fillna(df_copy['children'].median(), inplace=True)
 
 # Changing data types
-# df_copy['children'] = df_copy['children'].astype(int)
-# df_copy['age'] = df_copy['age'].astype(int)
+df_copy[['age', 'children']] = df_copy[['age', 'children']].astype(int)
 # print(df_copy['children'].head(5))
 
-# print(df_copy.head(5))
-# print(df_copy.tail(5))
-# print(df_copy.info())
+print(df_copy.head(5))
+print(df_copy.tail(5))
+print(df_copy.info())
 
 # df_copy = df_copy.round(2)
-
 # df_copy.to_csv("csv_processed_files/insurance_procesessed.csv", float_format="%.2f", index=False)
 # print('done')
 
-
+# print(df.head(5))
+# print(df.dtypes)
 '''
-do we do the same using the raw string when saving?
+Check columns that are objects then turn them into strings
 '''

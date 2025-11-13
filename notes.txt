@@ -40,3 +40,8 @@ region  northeast  northwest  southeast  southwest
 smoker
 no            257        267        273        267
 yes            67         58         91         58
+
+Types of data types after cleaning
+int64
+float64
+object - contains strings or mixed data types
