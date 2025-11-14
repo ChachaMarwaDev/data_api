@@ -16,11 +16,6 @@ df = pd.read_csv(path)
 # making a temporary copy of the file
 df_copy = df.copy()
 
-
-# path = Path(r"csv_processed_files\insurance_procesessed.csv")
-# df = pd.read_csv(path)
-# df_copy = df
-
 #Data inspection
 
 # shows column names in dataframe

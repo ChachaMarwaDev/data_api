@@ -15,10 +15,11 @@ df = pd.read_csv(path)
 # region_sex = df.groupby('region')['sex'].value_counts(normalize=True)
 # print('Sex dominating each region\n', region_sex)
 # 💰 What age incurs a high charge?
-age_charges = df.groupby('charges')['age'].mean()
-print(age_charges)
+# age_charges = df.groupby('charges')['age'].mean()
+# print(age_charges)
 # 👶 Does having children increase the charges?
-# df.groupby('children')['charges'].mean()
+# children_charges = df.groupby('children')['charges'].mean()
+# print('children increases charges', children_charges)
 # 🧒 Which age gap has children?
 # pd.cut(df['age'], bins=[18,25,35,45,55,65,80]).value_counts()
 # 🧾 Does having many children in a region increase charges?
