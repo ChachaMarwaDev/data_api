@@ -1,7 +1,7 @@
 import pandas as pd
 from pathlib import Path
 import seaborn as sns
-from csv_loading.insurance_db import save_to_sqlite  # Import our function
+from insurance_db import save_to_sqlite  # Import our function
 
 # Data loading
 path = Path(r"csv_raw_files\insurance.csv")

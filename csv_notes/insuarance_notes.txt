@@ -69,3 +69,4 @@ int64
 float64
 object - contains strings or mixed data types
 
+I have completed the data preparation steps for the insurance dataset. The data has been loaded, inspected, cleaned, explored, transformed, and stored in a SQLite database. The cleaned dataset contains 1338 non-null entries with appropriate data types assigned to each column. Categorical variables have been analyzed for correlations, particularly between age and charges, as well as between categorical variables such as sex, smoker status, and region. The cleaned data is now ready for further analysis or modeling.
