@@ -1,14 +1,7 @@
 import pandas as pd
 from pathlib import Path
 import seaborn as sns
-# from db import create_tables, add_user
-
-# def main():
-#     create_tables()
-#     add_user("Chacha", "chacha@example.com")
-
-# if __name__ == "__main__":
-#     main()
+from csv_loading.insurance_db import save_to_sqlite  # Import our function
 
 # Data loading
 path = Path(r"csv_raw_files\insurance.csv")
@@ -56,6 +49,10 @@ df = pd.read_csv(path)
 
 # print(df.head(5))
 # print(df.dtypes)
-'''
-Check columns that are objects then turn them into strings
-'''
+
+
+# Step 1: Load your cleaned CSV
+df = pd.read_csv(r'csv_processed_files\insurance_procesessed.csv')
+
+# Step 2: Save to database
+save_to_sqlite(df, 'insurance')

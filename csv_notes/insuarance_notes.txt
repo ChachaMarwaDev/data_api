@@ -68,3 +68,4 @@ Types of data types after cleaning
 int64
 float64
 object - contains strings or mixed data types
+
