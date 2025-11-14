@@ -7,7 +7,8 @@ e. transform the data
 f. store the data
 
 
-types of data types in our insurance csv file
+types of data types in our insurance csv file 
+Before processing
 age         float64
 sex          object
 bmi         float64
@@ -16,7 +17,28 @@ smoker       object
 region       object
 charges     float64
 
+After processing
+age          int64
+sex          object
+bmi          float64
+children     int64
+smoker       object
+region       object
+charges      float64
+
 Index: RangeIndex(start=0, stop=1338, step=1)
+
+Uncleaned version data types
+ #   Column    Non-Null Count  Dtype
+---  ------    --------------  -----
+ 0   age       1337 non-null   float64
+ 1   sex       1338 non-null   object
+ 2   bmi       1337 non-null   float64
+ 3   children  1337 non-null   float64
+ 4   smoker    1338 non-null   object
+ 5   region    1338 non-null   object
+ 6   charges   1338 non-null   float64
+dtypes: float64(4), object(3)
 
 Cleaned version data types
  #   Column    Non-Null Count  Dtype
@@ -28,6 +50,7 @@ Cleaned version data types
  4   smoker    1338 non-null   object
  5   region    1338 non-null   object
  6   charges   1338 non-null   float64
+dtypes: int64(2), float64(2), object(3)
 
 The correlation between categorical data [sex, smoker, region]
 

@@ -14,7 +14,7 @@ import seaborn as sns
 path = Path(r"csv_raw_files\insurance.csv")
 df = pd.read_csv(path)
 # making a temporary copy of the file
-df_copy = df.copy()
+# df_copy = df.copy()
 
 #Data inspection
 
@@ -38,17 +38,17 @@ df_copy = df.copy()
 # print(df_copy.nunique()) # age:47, sex:2, bmi:548, children:6, smoker:2, region:4, charges:1337
 
 # Filling data
-df_copy.fillna(df_copy['age'].median(), inplace=True)
-df_copy.fillna(df_copy['bmi'].median(), inplace=True)
-df_copy.fillna(df_copy['children'].median(), inplace=True)
+# df_copy.fillna(df_copy['age'].median(), inplace=True)
+# df_copy.fillna(df_copy['bmi'].median(), inplace=True)
+# df_copy.fillna(df_copy['children'].median(), inplace=True)
 
 # Changing data types
-df_copy[['age', 'children']] = df_copy[['age', 'children']].astype(int)
+# df_copy[['age', 'children']] = df_copy[['age', 'children']].astype(int)
 # print(df_copy['children'].head(5))
 
-print(df_copy.head(5))
-print(df_copy.tail(5))
-print(df_copy.info())
+# print(df_copy.head(5))
+# print(df_copy.tail(5))
+# print(df_copy.info())
 
 # df_copy = df_copy.round(2)
 # df_copy.to_csv("csv_processed_files/insurance_procesessed.csv", float_format="%.2f", index=False)
