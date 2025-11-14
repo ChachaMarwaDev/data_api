@@ -1,8 +1,3 @@
-Here’s a clean, professional structure for your README — clear, readable, and with a steady tone that shows growth and seriousness.
-You can paste this directly into your repo and adjust anything later.
-
----
-
 # **ETL Practice Project – Insurance Dataset**
 
 This project marks the beginning of my journey into data engineering. I wanted to understand the full ETL (Extract, Transform, Load) process using simple CSV files before moving into larger systems. I collected datasets from platforms such as HuggingFace and Kaggle, starting with **insurance.csv**, as it offers rich features to practice cleaning, analysis, and storage.
