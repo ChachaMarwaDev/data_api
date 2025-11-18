@@ -4,5 +4,6 @@ import pandas as pd
 
 def clean_data(df: pd.DataFrame) -> pd.DataFrame:
     # Step 1: Inspect
-    print(df.head(5))
+    # print(df.head(5))
+    print(df.columns)
     return df
