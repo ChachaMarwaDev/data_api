@@ -1,0 +1,1 @@
+# configuration of an SQL file
