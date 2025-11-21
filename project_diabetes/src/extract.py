@@ -1,5 +1,4 @@
 # File will entail path configuration
-from pathlib import Path
 from src.config import DATA_DIR # file path variable in the config.py that makes it easier to deal
 import pandas as pd
 
@@ -8,4 +7,5 @@ def extract_csv(filename: str) -> pd.DataFrame: # a function giving a filename i
     print("Loading:", file_path.resolve()) #shows the path loaded on the terminal
 
     df = pd.read_csv(file_path) #takes the path as it is and does not accept file path
+
     return df
