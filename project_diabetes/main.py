@@ -15,8 +15,8 @@ def main():
     print(f"Rows before cleaning: {len(raw_data)}")
     print(f"Rows after cleaning: {len(cleaned)}")
 
-    cleaned.to_csv("cleaned_diabetes02.csv", index=False)
-    print("clean data exported")
+    # cleaned.to_csv("cleaned_diabetes02.csv", index=False)
+    # print("clean data exported")
 
     # load_data(cleaned, "diabetes_cleaned.csv")
     return cleaned
